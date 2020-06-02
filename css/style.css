@@ -1,0 +1,424 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+}
+
+.logo {
+  opacity: 70%;
+  margin: 1% 0 2% 4%;
+}
+
+.home:hover {
+  background-color: white;
+}
+
+.nav {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 60%;
+}
+
+.ham {
+  margin: 7% 10% 0 0;
+}
+
+#hamburger {
+  opacity: 60%;
+}
+
+#hamburger:hover {
+  cursor: pointer;
+}
+
+.menu {
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  margin-right: 30%;
+  font-family: sans-serif;
+}
+
+.icons {
+  margin-top: 0.4em;
+}
+
+.iconss {
+  margin-top: 0.4em;
+}
+
+.menu #share {
+  display: inline;
+  margin-left: 3%;
+}
+
+.menu #facebook {
+  margin-left: 5%;
+}
+
+.menu #twitter {
+  margin-left: 5%;
+}
+
+.menu #youtube {
+  margin-left: 5%;
+}
+
+.menu #instagram {
+  margin-left: 12%;
+}
+
+.menu #pinterest {
+  margin-left: 5%;
+}
+
+li {
+  list-style-type: none;
+  margin-top: 1.2em;
+}
+
+
+a {
+  color: gray;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 1%;
+}
+
+a:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+
+#toggle {
+  display: none;
+}
+
+#toggle ~ .menu {
+  display: none;
+}
+
+#toggle:checked ~ .menu {
+  display: block;
+}
+
+.container {
+  background-color: rgba(238, 234, 234, 60%);
+  display: flex;
+  flex-direction: column;
+  margin: 0 2%;
+}
+
+img {
+  width: 100%;
+  transition: transform 0.2s ease-in;
+}
+
+img:hover {
+  transform: scale(1.01);
+  opacity: 70%;
+}
+
+footer {
+  text-align: center;
+  margin: 5%;
+  font-size: smaller;
+}
+
+#linked_in {
+  opacity: 70%;
+}
+
+#facebook {
+  margin-left: 1%;
+  opacity: 70%;
+}
+
+#twitter {
+  margin-left: 1%;
+  opacity: 70%;
+}
+
+#youtube {
+  opacity: 70%;
+  margin-left: 1%;
+}
+#share {
+  margin: 1% 0 0 50%;
+  display: block;
+  opacity: 70%;
+}
+
+#instagram {
+  margin: 0 1% 0 5%;
+  opacity: 70%;
+}
+
+#pinterest {
+  opacity: 70%;
+}
+
+.bio_container {
+  margin: 2% 5% 0 5%;
+  background-color: rgba(238, 234, 234, 60%);
+}
+
+.bio p, h1 {
+  text-align: justify;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+
+.brides_container {
+  margin: 0 2%;
+  background-color: rgba(238, 234, 234, 60%);
+}
+
+.current a {
+  color: rgb(114, 26, 56);
+  background-color: white;
+}
+
+main input {
+  display: block;
+  margin: 3% 0;
+  width: 90%;
+  padding: 1.5%;
+  border: 0.2px solid gray;
+  border-top-width: 3px;
+  opacity: 50%;
+}
+
+#textarea {
+  margin-left: 3% 0;
+  width: 90%;
+  border: 0.2px solid gray;
+  border-top-width: 3px;
+  opacity: 50%;
+}
+
+.contact_container {
+  margin: 0 3%;
+  font-family: cursive;
+  background-color: rgba(238, 234, 234, 60%);
+}
+
+.contact_container h1,
+.contact_container p {
+  opacity: 70%;
+}
+
+.submit {
+  display: block;
+  padding: 3%;
+  margin-top: 3%;
+  color: white;
+  border: none;
+  background-color: rgb(129, 38, 69);
+  font-size: 1rem;
+  opacity: 70%;
+}
+
+
+li.inner_li {
+  padding: 1.4%;
+}
+
+
+li.inner_li:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+
+@media all and (min-width: 760.98px) {
+  .ham {
+    display: none;
+  }
+  #toggle ~ .menu {
+    display: block;
+  }
+  .menu {
+    margin-right: 2%;
+    padding: none;
+    text-align: end;
+    display: block;
+  }
+
+  .nav {
+    width: 90%;
+    margin-left: none;
+  }
+
+   li {
+    display: inline;
+    margin-right: 4%;
+  }
+
+  .menu a{ 
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    opacity: 70%;
+    margin: 1% 0 2% 4%;
+    width: 10%;
+  }
+
+  .iconss {
+    margin-top: 7%;
+    text-align: end;
+    width: 80%;
+  }
+
+  .menu #pinterest, .menu #youtube, .menu #twitter, .menu #facebook {
+    margin-left: 1%;
+    opacity: 40%;
+    width: 1.5%;
+    
+  }
+
+  .menu #instagram {
+    margin-left: 2%;
+    opacity: 40%;
+    width: 1.5%;
+  }
+  .menu #linked_in , .menu #share {
+    margin-left: 1%;
+    opacity: 40%;
+    width: 1.5%;
+    position: relative;
+  }
+
+
+li label{
+  font-size: .5rem;
+}
+
+#drop {
+  display: none;
+}
+
+#down {
+  display: none;
+}
+
+#drop:checked ~ .inner.first {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  position: fixed;
+  right:20%;
+}
+
+#down:checked ~ .inner.second {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  position: fixed;
+  right: 3%;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+ padding: 0 .5%;
+
+}
+.column img {
+  width: 100%;
+  margin-top: 5%;
+  transition: transform 0.2s ease-in;
+  vertical-align: middle;
+}
+
+img:hover {
+  transform: scale(1.01);
+  opacity: 70%;
+}
+
+.brides_container {
+  
+  display: flex;
+  flex-direction : row;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.columns {
+  display: flex;
+  flex: 20%;
+  max-width: 20%;
+ 
+
+}
+
+.columns img {
+  width: 100%;
+  margin-top: 5%;
+  transition: transform 0.2s ease-in;
+  vertical-align: middle;
+  padding: 0 .7%;
+} 
+
+.contact_container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 4px;
+}
+
+.contact_container img {
+width: 90%;
+margin-right: 2%;
+}
+
+.contact_form {
+  width: 50%;
+}
+
+.bio_container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 4px;
+}
+
+.bio_img{
+  width: 90%;
+  margin-right: 3%;
+}
+
+
+.bio {
+  width: 60% ;
+  font-size: 1.2rem;
+}
+
+.inner.first li{
+  margin-top: 0.3em;
+  text-align: center ;
+  font-size: smaller;
+
+}
+.inner.second li{
+  margin-top: 0.3em;
+  text-align: center ;
+
+}
