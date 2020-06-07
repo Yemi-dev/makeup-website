@@ -52,7 +52,7 @@ header {
 }
 
 .iconss {
-  margin-top: 0.4em;
+  padding-top: 1.2em ;
 }
 
 .menu #share {
@@ -178,6 +178,10 @@ footer {
   font-size: 1.2rem;
 }
 
+.bio{
+  padding: 1.5em;
+}
+
 .brides_container {
   margin: 0 2%;
   background-color: rgba(238, 234, 234, 60%);
@@ -215,6 +219,10 @@ main input {
 .contact_container h1,
 .contact_container p {
   opacity: 70%;
+}
+
+.contact_form {
+  padding: 2em;
 }
 
 .submit {
@@ -275,7 +283,7 @@ li.inner_li:hover {
   }
 
   .iconss {
-    margin-top: 7%;
+    margin-top: 6%;
     text-align: end;
     width: 80%;
   }
